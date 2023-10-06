@@ -3,12 +3,14 @@ import "./Gallery.css";
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
+import { useNavigate } from "react-router-dom";
 
 export default function Gallery() {
 
     const [state, setState] = useState([]);
     console.log(state);
 
+    const navigate = useNavigate();
 
     useEffect(() =>{
         DisplayPaint();
@@ -26,9 +28,9 @@ export default function Gallery() {
 
   return (
     <div className="conatiner">
-        <h1 className="heading">Art</h1>
-
-
+        {/* <h1 className="heading">Art</h1> */}
+        
+        
   {/* mapping */}
 <div className="display-card">
         {
@@ -50,7 +52,7 @@ export default function Gallery() {
 
                 </div>
 
-                <button className="showmore">Show More</button>
+                <button onClick={()=> navigate(`singleproduct/${e.id}`)} className="showmore">Show More</button>
             </div>
            ))
         }
