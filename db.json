@@ -1,0 +1,321 @@
+{
+    "paint" :[
+       
+        {
+            "id" : 3,
+            "image" :"./assets/3.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+            "name" :"Catalina",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"Óleo",
+            "dateofpaint" :"Siglo:_XIX Año:___1890",
+            "series" :"147/180",
+            "mesaurment" :"XX"
+
+        },
+
+       
+        {
+            "id" : 5,
+            "image" :"./assets/5.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Francisco Zúñiga",
+            "placedate" :"1912/ San José de Costa Rica",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"Dibujo/ carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1974",
+            "series" :" ",
+            "mesaurment" :"47 cm x 63 cm"
+
+        },
+
+       
+        {
+            "id" : 7,
+            "image" :"./assets/7.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Mf. Muñoz",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"Carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1978",
+            "series" :" ",
+            "mesaurment" :"42.5 cm x 57.5 cm"
+
+        },
+        {
+            "id" : 8,
+            "image" :"./assets/8.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Mf. Muñoz",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"Carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1980",
+            "series" :" ",
+            "mesaurment" :"42 cm x 57 cm"
+
+        },
+        {
+            "id" : 9,
+            "image" :"./assets/9.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Mf. Muñoz",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"Carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1972",
+            "series" :" ",
+            "mesaurment" :"42 cm x 57 cm"
+
+        },
+
+        {
+            "id" : 11,
+            "image" :"./assets/11.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Nelson Sarabia",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Mágica luz”",
+            "technique" :"Carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1990",
+            "series" :"30 / 100",
+            "mesaurment" :"66 cm x 49 cm"
+
+        },
+        {
+            "id" : 12,
+            "image" :"./assets/12.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Nelson Sarabia",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Mágico",
+            "technique" :"Carbón",
+            "dateofpaint" :"Siglo:_XX Año:___1988",
+            "series" :" ",
+            "mesaurment" :"78 cm x 54 cm"
+
+        },
+
+
+        
+        
+        {
+            "id" : 14,
+            "image" :"./assets/14.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Javier Klitz",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Mesa de pintura",
+            "technique" :"Mixta",
+            "dateofpaint" :"Siglo:_XX Año:___1983",
+            "series" :" ",
+            "mesaurment" :"50 cm x 55 cm"
+
+        },
+        {
+            "id" : 15,
+            "image" :"./assets/15.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Luis Solleiro",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Marina",
+            "technique" :"Óleo sobre tela",
+            "dateofpaint" :"Siglo:_XX Año:___",
+            "series" :" ",
+            "mesaurment" :""
+
+        },
+        {
+            "id" : 16,
+            "image" :"./assets/16.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Antonio Loperena",
+            "placedate" :"Arguedas, España/1922_",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Caballos",
+            "technique" :"Óleo",
+            "dateofpaint" :"Siglo:_XX Año:___",
+            "series" :" ",
+            "mesaurment" :"40 cm x 56 cm"
+
+        },
+        {
+            "id" : 17,
+            "image" :"./assets/17.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Luis Solleiro",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Toreras",
+            "technique" :"Óleo sobre tela",
+            "dateofpaint" :"Siglo:_XX Año:___",
+            "series" :" ",
+            "mesaurment" :"1.50 cm x 1.20 cm"
+
+        },
+
+        {
+            "id" : 1,
+            "image" :"./assets/1.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+            "name" :"Juan Calderón (J.Calderón)",
+            "placedate" :"Monclova Coah./1938",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"La cita",
+            "technique" :"XX",
+            "dateofpaint" :"Siglo:_XX Año:___1986",
+            "series" :"158/200",
+            "mesaurment" :"XX"
+
+        },
+        {
+            "id" : 2,
+            "image" :"./assets/2.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+            "name" :"Mario Martínez",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :"XX",
+            "dateofpaint" :"Siglo:_XX Año:___1984_",
+            "series" :"147/180",
+            "mesaurment" :"XX"
+
+        },
+        {
+            "id" : 4,
+            "image" :"./assets/4.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Xavier Rodríguez",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Caballos",
+            "technique" :" ",
+            "dateofpaint" :"Siglo:_XX Año:___1979",
+            "series" :" ",
+            "mesaurment" :"50 cm x 49 cm"
+
+        },
+        {
+            "id" : 6,
+            "image" :"./assets/6.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Luis Granda",
+            "placedate" :"Madrid /1941",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :" ",
+            "technique" :" ",
+            "dateofpaint" :"Siglo:_XX Año:___1984",
+            "series" :"80/100",
+            "mesaurment" :"20 cm x 30 cm"
+
+        },
+
+
+        {
+            "id" : 10,
+            "image" :"./assets/10.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Salvador Castro",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"El vuelo y la manzana",
+            "technique" :" ",
+            "dateofpaint" :"Siglo:_XX Año:___1989",
+            "series" :"170 / 200",
+            "mesaurment" :"50 cm x 34 cm"
+
+        },
+
+        {
+            "id" : 13,
+            "image" :"./assets/13.png",
+            "titel" :"FICHA TÉCNICA",
+            "title2" :"DATOS DEL AUTOR:",
+
+            "name" :"Xavier Rodríguez",
+            "placedate" :" ",
+
+            "titel3" :"DATOS DE LA OBRA:",
+
+            "paintTitle" :"Hombre con dados",
+            "technique" :" ",
+            "dateofpaint" :"Siglo:_XX Año:___1982",
+            "series" :" ",
+            "mesaurment" :"55 cm x 87 cm"
+
+        }
+    ]
+} 
