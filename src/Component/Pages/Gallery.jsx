@@ -35,8 +35,8 @@ export default function Gallery() {
 <div className="display-card">
         {
            state.map((e) =>(
-            <div key={e.id} className="card">
-                <img src={e.image} alt={e.title} width="450px" height="450px"/>
+            <div key={e.id} className="card" onClick={()=> navigate(`singleproduct/${e.id}`)}>
+                <img src={e.image} alt={e.title} onClick={()=> navigate(`singleproduct/${e.id}`)} width="350px" height="350px"/>
                 {/* <h1>{e.id}</h1> */}
 
                 <div className="details">
@@ -53,13 +53,21 @@ export default function Gallery() {
                 </div>
 
                 <button onClick={()=> navigate(`singleproduct/${e.id}`)} className="showmore">Show More</button>
+            
+            
             </div>
            ))
-        }
+           }
 
 
+          
 </div>
 
+       <div className="but">
+           <button className="showmore2">Previous</button>
+           <button className="showmore2">1</button>
+           <button className="showmore2">Next</button>
+           </div>
     </div>
   )
 }
