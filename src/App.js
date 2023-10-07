@@ -9,7 +9,7 @@ import Gallery from './Component/Pages/Gallery';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       <Navbar/>
       
       <Allroute/>

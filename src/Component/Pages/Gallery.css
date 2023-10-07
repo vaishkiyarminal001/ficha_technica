@@ -1,23 +1,16 @@
 /* Home.css */
 
 body{
-    /* background: url("https://img.freepik.com/free-vector/abstract-watercolor-background_23-2149038179.jpg"); */
-    /* background-position: center; */
-    /* background-size: cover;  */
-    /* background-color: #f0f0f0;
-    background-repeat: no-repeat; */
-    /* width: 100%;
-    margin: auto; */
-
-    background-color: #310e68;
+   
     margin-bottom: 2%;
-    margin-top: 80px;
+    
 
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    margin-top: 80px;
     /* width: 90%; */
     /* border: 1px solid red; */
   }
@@ -211,4 +204,26 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
   }
+/* 
 
+  @media screen and (max-width: 768px) {
+    .container {
+      
+        padding: 10px;
+    }
+
+    .display-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .showmore,
+    .showmore1,
+    .showmore2 {
+        width: 80%;
+    }
+} */
