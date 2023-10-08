@@ -6,6 +6,8 @@ import  img2 from"./2.png"
 import  img3 from"./3.png"
 import  img9 from"./9.png"
 import  img7 from"./7.png"
+import { MyAuthContext } from '../Context/AuthContextProvide';
+import { useContext } from 'react';
 
 
 export default function Home() {
@@ -16,7 +18,9 @@ export default function Home() {
   const [count, setCount] = useState(0);
   const [margin, setMargin] = useState("0%");
   const [forward, setForward] = useState(true);
+  const {lang} = useContext(MyAuthContext);
 
+  
   function shiftImage(count) {
     switch (count){
       
@@ -90,6 +94,152 @@ export default function Home() {
 
 
 
+
+  if(!lang){
+
+    return (
+      <div>
+        {/* heading */}
+        <div className="heading">
+        <h1><span>Transformation</span><br/> Espacios con Arte</h1>
+        </div>
+  
+  
+        {/* video */}
+  
+        <React.Fragment>
+  
+          <div className="carousel-container">
+            <div className="images-container">
+             
+              <div className="image" style={{marginLeft: margin}}>
+                <img src={img7} alt="img7" />
+                </div>
+  
+                <div className="image">
+                <img src={img2} alt="img2" />
+                </div>
+  
+                <div className="image">
+                <img src={img3} alt="img3" />
+                </div>
+  
+                <div className="image">
+                <img src={img8} alt="img8" />
+                </div>
+  
+                <div className="image">
+                <img src={img9} alt="img9" />
+                </div>
+              
+            </div>
+  
+            
+            </div> 
+        </React.Fragment>
+  
+  
+  
+  
+        {/* what we have done */}
+        <div className="doneText">
+          <p>lo que hemos hecho</p>
+        </div>
+  
+  
+  
+        {/* Trending Art Work */}
+  
+        <div style={{ fontSize: '2em' }}>
+        <h1>Explorar obras de arte de moda</h1>
+        </div>
+  
+  
+        <div className="TrendingArt">
+         
+          <img src={img8} alt='error'/>
+          <img src={img2} alt='error'/>
+          <img src={img3} alt='error'/>
+          <img src={img9} alt='error'/>
+          {/* <img src={img7} alt='error'/> */}
+  
+        </div>
+  
+        <button className='ExploreButton'>Explorar</button>
+  
+  
+  
+        {/* instrument */}
+  
+        <div className="MarlyInstrument">
+          <h2>Los instrumentos curativos, como cuencos tibetanos y flautas, calman<br/>El alma y promover la paz interior. Explora su calma<br/>Melodías para la relajación y el bienestar emocional.</h2>
+        
+        <div className="MarlyImg">
+          <img src="https://katoombamusic.com.au/wp-content/uploads/2021/07/67001-400x400.jpg" alt= "error"/>
+          
+          <img src="https://5.imimg.com/data5/ANDROID/Default/2023/8/338502020/XG/NA/PI/25680909/product-jpeg.jpg" alt= "error"/>
+          
+          <img src="https://www.tribalvillage.com.au/wp-content/uploads/2021/11/11-12.jpg" alt= "error"/>
+        </div>
+  
+      
+        <button className="DiscoverBtn">Descubrir</button>
+  
+        
+        </div>
+  
+  
+        {/* New in Design */}
+  
+  
+        <h1 className='desc'>Descripción de pinturas</h1>
+  
+        <div className="DesignNew">
+  
+         
+          <div>
+          <img src="https://artstreet.in/cdn/shop/products/81TNNiaHZEL._SL1500_878x700.jpg?v=1687353797" alt="" />
+          <h3>Pintura al óleo</h3>
+          
+          <p>La pintura al óleo es un medio artístico versátil y duradero. Consiste en<br/>pigmentos suspendidos en aceites secantes, típicamente aceite de linaza. Los artistas aprecian<br/> su tiempo de secado lento, lo que permite mezclar y aplicar capas. Pinturas de óleo<br/>son conocidos por sus ricos colores, profundidad y durabilidad, lo que los hace<br/> Una opción preferida para muchos pintores.</p>
+         
+          </div>
+  
+          <div>
+          <img src="https://live.staticflickr.com/7015/6541061641_0796af88c7_b.jpg" alt="" />
+          <h3>Pintura al carbono</h3>
+          
+          <p>La pintura de carbono es un recubrimiento conductor impregnado de carbono.<br/> partículas Se usa comúnmente en electrónica e industria para.<br/>crear conexiones eléctricas, blindaje EMI/RFI y como<br/>componente en sensores. Su versatilidad y conductividad hacen<br/>Es un material valioso para diversas aplicaciones.</p>
+         
+          </div>
+  
+          <div>
+          <img src="https://azure.wgp-cdn.co.uk/app-painters-online/posts/MMBorrowdale.png?&format=webp&webp.quality=85&scale=down" alt="" />
+          <h3>Pintura Mixta</h3>
+          
+          <p>La pintura mixta se refiere a una mezcla de varios colores o pigmentos,<br/>dando como resultado un nuevo tono o matiz. Los artistas y diseñadores utilizan<br/>pintura mezclada para lograr paletas de colores únicas y personalizadas,<br/>agregando profundidad y creatividad a sus proyectos</p>
+         
+          </div>
+  
+          <div>
+          <img src="https://i0.wp.com/doodlewash.com/wp-content/uploads/2020/06/One-Color-Monochromatic-Watercolor-Painting-Tutorial.jpg?fit=1024%2C749&ssl=1" alt="" />
+          <h3>Pintura de acuarela</h3>
+          
+          <p>Pintura de acuarela, a menudo denominada acuarela o aquarelle,<br/>Es una técnica de pintura donde los pigmentos se suspenden en<br/>Soluciones a base de agua. Los artistas lo utilizan por su fluidez y transparencia, permitiendo composiciones delicadas y vibrantes. Es un versátil y<br/>Medio expresivo, popular por sus cualidades luminosas y etéreas.</p>
+         
+          </div>
+        </div>
+  
+  
+  
+  
+        <footer>
+  
+        </footer>
+      </div>
+    )
+
+  }
   return (
     <div>
       {/* heading */}

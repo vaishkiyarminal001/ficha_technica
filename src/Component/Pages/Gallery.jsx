@@ -4,6 +4,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import { useNavigate } from "react-router-dom";
+import { MyAuthContext } from '../Context/AuthContextProvide';
+import { useContext } from 'react';
 
 export default function Gallery() {
 
@@ -11,6 +13,8 @@ export default function Gallery() {
     console.log(state);
 
     const navigate = useNavigate();
+
+    const {lang} = useContext(MyAuthContext);
 
     useEffect(() =>{
         DisplayPaint();

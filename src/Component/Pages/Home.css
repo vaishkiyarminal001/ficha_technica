@@ -6,7 +6,7 @@
 .heading{
     width: 90%;
     margin: auto;
-    font-size: 3em;
+    font-size: 2em;
     /* border: 1px solid red; */
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -15,7 +15,7 @@
 
 .heading span{
     /* border: 1px solid red; */
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #b79b54;
 
 }
