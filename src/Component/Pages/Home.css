@@ -1,3 +1,8 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .heading{
     width: 90%;
     margin: auto;
@@ -15,114 +20,43 @@
 
 }
 
-.drag-container{
-    touch-action: none;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #111;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+
+
+
+.carousel-container{
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  /* border: 1px solid red; */
+
 }
 
-.drag-container, .spin-container{
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    -webkit-transform: rotateX(-10deg);
-    transform: rotate(-10deg);
-}
-
-
-.drag-container img{   
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 200px;
-    font-size: 50px;
-    text-align: center;
-    -webkit-box-shadow: 0 0 8px #fff;
-    box-shadow: 0 0 8px #fff;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+.images-container{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  /* border: 1px solid red; */
 }
 
 
-.drag-container img:hover {
-    -webkit-box-shadow: 0 0 15px #fffd;
-            box-shadow: 0 0 15px #fffd;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-  }
+.images-container > .image{
+  width: 10%;
+  height: 100%;
+  transition: all 1s ease;
+  /* border: 1px solid red; */
+  padding: 10px;
+  margin-left: 2%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
-
-  /* .drag-container p {
-    font-family: Serif;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-            transform: translate(-50%,-50%) rotateX(90deg);
-    color: #fff;
-  } */
-
-
-  #ground {
-    width: 900px;
-    height: 900px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-    transform: translate(-50%,-50%) rotateX(90deg);
-    background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
-  }
-
-  @-webkit-keyframes spin {
-    from{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-    } to{
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    }
-  }
-  
-  @keyframes spin {
-    from{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-    } to{
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    }
-  }
-  @-webkit-keyframes spinRevert {
-    from{
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    } to{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-    }
-  }
-  @keyframes spinRevert {
-    from{
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    } to{
-      -webkit-transform: rotateY(0deg);
-              transform: rotateY(0deg);
-    }
-  }
-
+.images-container > .image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
@@ -204,4 +138,37 @@
     border: none;
     color: white;
 
+}
+
+
+.desc{
+  font-size: 3em;
+}
+
+.DesignNew{
+  width: 90%;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  margin: auto;
+  gap: 10px;
+  margin-top: 2%;
+  /* text-align: left; */
+}
+
+
+.DesignNew div{
+  width: 80%;
+ margin: auto;
+  /* border: 1px solid red; */
+
+}
+
+.DesignNew div img{
+  width: 80%;
+ align-items: center;
+}
+
+.DesignNew div h3{
+  text-align: center;
 }

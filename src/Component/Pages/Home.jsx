@@ -1,13 +1,95 @@
 import React from 'react'
 import "./Home.css";
+import { useState } from 'react';
 import  img8 from"./8.png"
 import  img2 from"./2.png"
 import  img3 from"./3.png"
 import  img9 from"./9.png"
 import  img7 from"./7.png"
-import Slide from './Slide';
+
 
 export default function Home() {
+
+
+  // logic for slider
+
+  const [count, setCount] = useState(0);
+  const [margin, setMargin] = useState("0%");
+  const [forward, setForward] = useState(true);
+
+  function shiftImage(count) {
+    switch (count){
+      
+      case 0: 
+      setMargin("0%");
+      break;
+
+      case 1:
+      setMargin("-10%");
+      break;
+
+      case 2:
+      setMargin("-20%");
+      break;
+
+      case 3:
+      setMargin("-30%");
+      break;
+
+      case 4:
+      setMargin("-40%");
+      break;
+
+      default:
+        break;
+
+    }
+  }
+
+
+  if(forward){
+
+    for(let i=0; i<5; i++){
+
+      setTimeout(() =>{
+
+        if(count === 5){
+          setForward(false);
+  
+        }else {
+          setCount(count + 1);
+            shiftImage(count);
+          }
+
+      }, 1000);
+
+      // console.log(count);
+
+    }
+  }else {
+
+    for(let i=5; i>0; i--){
+
+      setTimeout(() =>{
+
+        if(count === 0){
+          setForward(true);
+  
+        }else {
+          setCount(count - 1);
+            shiftImage(count);
+          }
+
+      }, 1000);
+
+      // console.log(count);
+
+    }
+
+  }
+
+
+
   return (
     <div>
       {/* heading */}
@@ -18,27 +100,36 @@ export default function Home() {
 
       {/* video */}
 
-       <Slide />
+      <React.Fragment>
 
-      {/* <div className="drag-container">
-        <div className="spin-container">
+        <div className="carousel-container">
+          <div className="images-container">
+           
+            <div className="image" style={{marginLeft: margin}}>
+              <img src={img7} alt="img7" />
+              </div>
+
+              <div className="image">
+              <img src={img2} alt="img2" />
+              </div>
+
+              <div className="image">
+              <img src={img3} alt="img3" />
+              </div>
+
+              <div className="image">
+              <img src={img8} alt="img8" />
+              </div>
+
+              <div className="image">
+              <img src={img9} alt="img9" />
+              </div>
+            
+          </div>
+
           
-        <img src={img8} alt=""/>
-        <img src={img2} alt=""/>
-        <img src={img3} alt=""/>
-        <img src={img9} alt=""/>
-        <img src={img7} alt=""/>
-
-
-        <p>FICHA TÉCNICA Art Gallery</p>
-      </div>
-
-      <div className="ground"></div>
-      </div>
-
-      <div className="musicControler"></div> */}
-
-
+          </div> 
+      </React.Fragment>
 
 
 
@@ -89,6 +180,55 @@ export default function Home() {
 
       
       </div>
+
+
+      {/* New in Design */}
+
+
+      <h1 className='desc'>Description of Paintings</h1>
+
+      <div className="DesignNew">
+
+       
+        <div>
+        <img src="https://artstreet.in/cdn/shop/products/81TNNiaHZEL._SL1500_878x700.jpg?v=1687353797" alt="" />
+        <h3>Oil Painting</h3>
+        
+        <p>Oil paint is a versatile and enduring artistic medium. It consists of<br/> pigments suspended in drying oils, typically linseed oil. Artists appreciate<br/> its slow drying time, allowing for blending and layering. Oil paintings <br/>are known for their rich colors, depth, and durability, making them<br/> a preferred choice for many painters.</p>
+       
+        </div>
+
+        <div>
+        <img src="https://live.staticflickr.com/7015/6541061641_0796af88c7_b.jpg" alt="" />
+        <h3>Carbon Painting</h3>
+        
+        <p>Carbon paint is a conductive coating infused with carbon<br/> particles It's commonly used in electronics and industry to .<br/>create electrical connections, EMI/RFI shielding, and as a<br/> component in sensors. Its versatility and conductivity make<br/> it a valuable material for various applications.</p>
+       
+        </div>
+
+        <div>
+        <img src="https://azure.wgp-cdn.co.uk/app-painters-online/posts/MMBorrowdale.png?&format=webp&webp.quality=85&scale=down" alt="" />
+        <h3>Mixed Painting</h3>
+        
+        <p>Mixed paint refers to a blend of various colors or pigments,<br/> resulting in a new shade or hue. Artists and designers use<br/> mixed paint to achieve unique and customized color palettes,<br/> adding depth and creativity to their projects</p>
+       
+        </div>
+
+        <div>
+        <img src="https://i0.wp.com/doodlewash.com/wp-content/uploads/2020/06/One-Color-Monochromatic-Watercolor-Painting-Tutorial.jpg?fit=1024%2C749&ssl=1" alt="" />
+        <h3>Water Color Painting</h3>
+        
+        <p>Watercolor painting, often referred to as watercolor or aquarelle,<br/> is a painting technique where pigments are suspended in <br/> water-based solutions. Artists use it for its fluidity and transparency, allowing delicate and vibrant compositions. It's a versatile and <br/>expressive medium, popular for its luminous and ethereal qualities.</p>
+       
+        </div>
+      </div>
+
+
+
+
+      <footer>
+
+      </footer>
     </div>
   )
 }
