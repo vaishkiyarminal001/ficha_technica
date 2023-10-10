@@ -1,20 +1,27 @@
 /* About.css */
 
 .about-container {
-    background-color: #310e68;
+    /* background-color: #310e68; */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin-top: 3%;
+    
    
   }
   
   .about-content {
-    background-color: white;
-    border-radius: 8px;
+    background-color: #b79b54;
+    /* border-radius: 8px; */
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    text-align: left;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    color: black;
+
   }
   
   .about-content h1 {
@@ -28,3 +35,19 @@
     margin-bottom: 20px;
   }
   
+
+
+  @media screen and (max-width: 767px) {
+    .about-content {
+      width: 100%;
+      margin-top: 2%;
+    }
+  }
+  
+  /* Styles for screens larger than or equal to 768px and smaller than 992px (medium screens) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .about-content {
+      width: 100%;
+      margin-top: 2%
+    }
+  }

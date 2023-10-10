@@ -9,6 +9,7 @@ import { Error } from "../Pages/Error"
 import React from 'react'
 import Singleproduct from "../Pages/Singleproduct"
 import Home from "../Pages/Home"
+import { Admin } from "../Admin/Admin"
 
 export default function Allroute() {
     return(
@@ -18,7 +19,9 @@ export default function Allroute() {
                   <Route path="/contact" element={<Contact/>} />
                   <Route path="/gallery" element={<Gallery/>} />
                   <Route path="/gallery/singleproduct/:id" element={<Singleproduct />} />
+                  <Route path="/admin" element={<Admin/>}/>
                   <Route path="*" element={<Error/>}/>
+                  
                   
                  
         </Routes>

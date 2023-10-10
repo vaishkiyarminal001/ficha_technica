@@ -1,0 +1,157 @@
+/* CSS for Admin Form */
+.mainDiv {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    background-color: #e4e2e2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .formClass {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    gap: 10px;
+    /* border: 1px solid red; */
+  }
+  
+  .mainDiv > div {
+    margin: 10px;
+    /* border: 1px solid red; */
+  }
+  
+  label {
+    font-weight: bold;
+    /* border: 1px solid red; */
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* border: 1px solid red; */
+
+  }
+  
+  .submitAdmin {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    border: 1px solid red;
+  }
+  
+  .submitAdmin:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  
+
+
+
+  
+  /* AdminLogin.css */
+
+/* Container for the login form */
+.admin-login-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Input fields and labels */
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Login button */
+  button {
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Logged-in state */
+  .admin-logged-in {
+    text-align: center;
+  }
+  
+  .admin-logged-in h2 {
+    color: #007bff;
+  }
+
+
+
+  
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .mainDiv {
+    width: 90%;
+  }
+
+  .formClass {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+/* Media Query for Medium Screens */
+@media (max-width: 992px) {
+  .mainDiv {
+    width: 95%;
+  }
+}
+  
