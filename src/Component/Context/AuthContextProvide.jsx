@@ -8,7 +8,8 @@ function AuthContextProvide({children}) {
 const[lang, setLang]= useState(false);
 // console.log(lang)
 
-
+const[isAuth, setIsauth] = useState(false);
+console.log(isAuth);
 
 
 
@@ -17,7 +18,7 @@ const language= () =>{
 }
     return(
         // value is used for send info
-     <MyAuthContext.Provider value = {{language,lang ,setLang}}>{children}</MyAuthContext.Provider>
+     <MyAuthContext.Provider value = {{language,lang ,setLang, isAuth, setIsauth}}>{children}</MyAuthContext.Provider>
     )
 }
 

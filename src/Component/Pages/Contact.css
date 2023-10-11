@@ -21,7 +21,7 @@
 .contact-content h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #310e68;
+  color: #b79b54;
 }
 
 .contact-content p {
@@ -33,7 +33,7 @@
 .contact-info h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #310e68;
+  color: #b79b54;
 }
 
 .contact-info p {
@@ -45,7 +45,7 @@
 .contact-form h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #310e68;
+  color: #b79b54;
 }
 
 .form-group {
@@ -87,10 +87,10 @@
 button[type="submit"] {
   background-color: #b79b54;
   color: white;
-  font-size: 16px; /* Smaller font size for the button */
+  font-size: 16px; 
   border: none;
-  border-radius: 6px; /* Smaller border-radius for the button */
-  padding: 8px 16px; /* Smaller padding for the button */
+  border-radius: 6px; 
+  padding: 8px 16px; 
   cursor: pointer;
   transition: background-color 0.3s;
   width: 30%;

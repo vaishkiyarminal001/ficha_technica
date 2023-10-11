@@ -54,18 +54,13 @@
     cursor: pointer;
     font-size: 16px;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   
   .submitAdmin:hover {
     background-color: #0056b3;
   }
   
-
-
-  
-
-
 
   
   /* AdminLogin.css */

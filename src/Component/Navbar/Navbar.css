@@ -81,25 +81,6 @@ nav span {
   transition: left 0.3s, width 0.3s;
 }
 
-/* .link:nth-child(1):hover ~ span {
-  left: 0;
-  width: 25%;
-}
-
-.link:nth-child(2):hover ~ span {
-  left: 25%;
-  width: 25%;
-}
-
-.link:nth-child(3):hover ~ span {
-  left: 50%;
-  width: 25%;
-}
-
-.link:nth-child(4):hover ~ span {
-  left: 75%;
-  width: 25%;
-} */
 
 
 
@@ -107,10 +88,19 @@ nav span {
 
 
 /* Media query for medium screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .Navbar {
     flex-direction: column;
     align-items: center;
+  }
+
+  .logo {
+    /* border: 1px solid red; */
+    width: 15%;
+  }
+  
+  .logo > img {
+    width: 100%;
   }
 
   nav {
@@ -127,9 +117,18 @@ nav span {
 }
 
 /* Media query for small screens */
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   .Navbar {
     height: auto;
+  }
+
+  .logo {
+    /* border: 1px solid red; */
+    width: 30%;
+  }
+  
+  .logo > img {
+    width: 100%;
   }
 
   nav {

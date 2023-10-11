@@ -1,210 +1,441 @@
 /* Home.css */
 
+.container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 1%;
+  background-color: #f7f7f7;
 
-.conatiner {
-    text-align: center;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 1%;
-    background-color: #f7f7f7;
+}
 
-    /* width: 90%; */
-    /* border: 1px solid red; */
-  }
+.upperImg {
+  width: 90%;
+  /* background-color: #f7f7f7; */
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  font-family: 'Dancing Script', cursive;
+}
 
-  .upperImg{
-    width:100%;
-    height:250px;
-    margin-bottom: 2%;
-    /* border: 1px solid red; */
-  }
+.upperImg > h4 {
+  background-color: #dfbd67;
+  width: 80%;
+  margin: auto;
+}
 
-  .upperImg > img{
-    width: 100%;
-    height: 100%;
-  }
-  
-  
+.display-card {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.card {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2%;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+.card img {
+  max-width: 100%;
+  border: 5px solid white;
+}
+
+.showmore {
+  background-color: #b79b54;
+  color: white;
+  width: 50%;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 2%;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: auto;
+}
+
+.showmore:hover {
+  box-shadow: 0 0 5px #b79b54, 0 0 25px #b79b54, 0 0 50px #b79b54, 0 0 100px #b79b54, 0 0 200px #b79b54;
+  color: black;
+}
+
+.details {
+  font-size: 20px;
+  box-shadow: 0 0 5px e29650;
+  opacity: 1;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+.icon {
+  margin-right: 5px;
+  vertical-align: middle;
+  color: black;
+  margin-bottom: 1.5%;
+}
+
+hr {
+  border-top: 1px dotted gray;
+}
+
+.detail2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  font-size: 12px;
+}
+
+.detail2 > h2,
+.detail2 > h3,
+.detail2 > h4 {
+  margin-right: 5%;
+}
+
+.display-card1 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 3%;
+  /* border: 1px solid red; */
+}
+
+.left {
+  flex: 1; 
+}
+
+.right {
+  flex: 2; 
+  padding: 20px; 
+  /* border: 1px solid red; */
+}
+
+
+.card1{
+  /* border: 1px solid red; */
+  width: 100%;
+
+  margin-top: 5%;
+}
+
+.display-card1 img {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid red; */
+
+}
+
+.buttonDiv {
+  width: 60%;
+  margin: auto;
+}
+
+.showmore1 {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 2%;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: auto;
+  width: 80%;
+}
+
+.showmore1:hover {
+  background-color: #b79b54;
+  box-shadow: 0 0 5px #b79b54, 0 0 25px #b79b54, 0 0 50px #b79b54, 0 0 100px #b79b54, 0 0 200px #b79b54;
+  color: white;
+}
+
+.but {
+  width: 60%;
+  padding: 5px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.showmore2 {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 2%;
+  margin: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* CSS for Contactform */
+.FormContainer {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  margin-top: 3%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Make the input fields full width */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Apply the 40% width to input fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+
+input[type="tel"],
+input[type="contact"]{
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
   .display-card {
-    background-color: #f7f7f7;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
-    /* border: 1px solid red; */
-    align-items: center;
-    
+      grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .card {
-    /* border: 1px solid red; */
-    padding: 10px;
-    text-align: center;
-    /* background-color: black; */
-    color: black;
-    width: 80%;
+      font-size: 16px;
+  }
+
+  .showmore1 {
+      font-size: 14px;
+  }
+
+  .upperImg {
+    width: 90%;
+    /* background-color: #f7f7f7; */
     margin: auto;
     margin-bottom: 2%;
-    transition: transform 0.3s;
-    /* border: 1px solid red; */
-    border-radius: 10px;
-    /* background-color: #f2f3fb; */
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin-top: 4%;
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
   }
 
-  
-  .card:hover {
-    transform: scale(1.05); 
-    
-    color: black;
-   
-  }
-  
   .card img {
     max-width: 100%;
-   
     border: 5px solid white;
   }
 
 
 
-  .showmore {
-    background-color: #b79b54;; 
-    color: white; 
-    width: 50%;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 30px;
-    cursor: pointer; 
-    font-size: 16px; 
-    margin-top: 2%;
-    transition: background-color 0.3s, transform 0.3s; 
-    /* border: 1px solid red; */
-    margin: auto;
+  .FormContainer {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-top: 5%;
   }
   
-  .showmore:hover {
-    box-shadow: 0 0 5px #b79b54,
-    0 0 25px #b79b54, 0 0 50px #b79b54,
-    0 0 100px #b79b54, 0 0 200px #b79b54;
-
-    color: black;
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
   }
-
-  .details{
-    /* border: 1px solid red; */
-    font-size: 20px;
-    box-shadow: 0 0 5px e29650;
-    opacity: 1;
-    width: 90%;
-    margin: auto;
-    text-align: left;
-    
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Make the input fields full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
-
-  .icon {
-    margin-right: 5px; 
-    vertical-align: middle; 
-    color:black;  
-    margin-bottom: 1.5%;
-  }
-
-  hr{
-    border-top: 1px dotted gray;
-    
-  }
-
-  .detail2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 12px;
-  }
-
-
-  .detail2 > h2,
-  .detail2 > h3,
-  .detail2 > h4{
-    /* border: 1px dotted #3739e4; */
-    margin-right: 5%;
-  }
-
-  .display-card1{
-
-    display: grid;
-    width: 30%;
-    /* border: 1px solid red; */
-    align-items: center;
-    margin: auto;
-
-  }
-
-
-  .display-card1 img {
-
-    display: grid;
+  
+  /* Apply the 40% width to input fields */
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
-    /* border: 1px solid red; */
+  }
+  
+  input[type="tel"],
+  input[type="contact"]{
+    width: 100%;
+  }
+
+
+
+  .display-card1 {
+    display: grid;
     align-items: center;
-    margin: auto;
-
-  }
-
-  .buttonDiv{
     width: 60%;
-    /* border: 1px solid red; */
     margin: auto;
+    margin-top: 3%;
+    /* border: 1px solid red; */
+  }
+  
+  .left {
+    flex: 1; 
   }
 
-  .showmore1{
+  
+  .right {
+    flex: 2; 
+    padding: 20px; 
 
-    /* background-color: #310e68;;  */
-    color: white; 
+  }
+  
+
+
+}
+
+/*small screens */
+@media only screen and (max-width: 500px) {
+  .display-card {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .card {
+      font-size: 14px;
+  }
+
+  .showmore1 {
+      font-size: 12px;
+  }
+
+  .upperImg {
+    width: 90%;
+    /* background-color: #f7f7f7; */
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .card img {
+    max-width: 100%;
+    border: 5px solid white;
+  }
+
+
+  .FormContainer {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-top: 3%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 30px;
-    cursor: pointer; 
-    font-size: 16px; 
-    margin-top: 2%;
-    transition: background-color 0.3s, transform 0.3s; 
-    /* border: 1px solid red; */
-    margin: auto;
-
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Make the input fields full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Apply the 40% width to input fields */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+  
+  input[type="tel"],
+  input[type="contact"]{
+    width: 100%;
   }
 
-  .showmore1:hover{
-
-    background-color: #b79b54;
-    box-shadow: 0 0 5px #b79b54,
-    0 0 25px #b79b54, 0 0 50px #b79b54,
-    0 0 100px #b79b54, 0 0 200px #b79b54;
-
-    color: white;
-
-  }
-
-
-  .but{
+  
+  .display-card1 {
+    display: grid;
+    align-items: center;
     width: 60%;
-    padding: 5px;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 3%;
+    /* border: 1px solid red; */
+  }
+  
+  .left {
+    flex: 1; 
   }
 
-  .showmore2{
-
-    background-color: white; 
-    color: black; 
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none; 
-    border-radius: 30px;
-    cursor: pointer; 
-    font-size: 16px; 
-    margin-top: 2%;
-    margin: auto;
-    margin-right: 5%;
-    margin-left: 5%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+  
+  .right {
+    flex: 2; 
+    padding: 20px; 
+    
   }
+  
+
+  
+}

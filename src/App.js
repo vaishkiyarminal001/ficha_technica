@@ -1,4 +1,5 @@
 
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Allroute from './Component/Allroutes/Allroute';
 import Navbar from './Component/Navbar/Navbar';
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App"> 
       <Navbar/>
-      
+      <ToastContainer />
       <Allroute/>
      
     </div>

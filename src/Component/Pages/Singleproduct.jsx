@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
+import TitleIcon from '@mui/icons-material/Title';
+import PhotoSizeSelectLargeIcon from '@mui/icons-material/PhotoSizeSelectLarge';
 import { useNavigate } from 'react-router-dom';
 import './Gallery.css';
 
@@ -35,9 +37,14 @@ export default function Singleproduct() {
 
   return (
     <div className="display-card1">
-      {
-        <div key={state.id} className="card">
-          <img src={state.image} alt={'error'} width="450px" height="450px" />
+     
+      <div className="left">
+        <img src={state.image} alt="error" width="450px" height="450px" />
+      </div>
+
+      <div className="right">
+       
+        <div key={state.id} className="card1">
           <div className="details">
             <h2>
               <PersonIcon className="icon" />
@@ -45,33 +52,49 @@ export default function Singleproduct() {
             </h2>
             <hr />
 
+
             <div className="detail2">
               <h3>
                 <ColorLensIcon className="icon" />
-                Técnica:{state.technique}
+                Técnica: {state.Stechnique}
               </h3>
+             
               <h3>
-                <ColorLensIcon className="icon" />
-                Técnica:{state.technique}
+                <TitleIcon className="icon" />
+                Título: {state.Stitle}
               </h3>
+             
               <h4>
                 <CalendarMonthIcon className="icon" />
-                {state.dateofpaint}
+              {state.Syear}
               </h4>
+             
               <h4>
                 <CalendarMonthIcon className="icon" />
-                {state.dateofpaint}
+                {state.Scentury}
               </h4>
+
+              <h4>
+                <CalendarMonthIcon className="icon" />
+                DIRECCIÓN: {state.Splacedob}
+              </h4>
+
+              <h4>
+                <PhotoSizeSelectLargeIcon className="icon" />
+                Tamaño: {state.size}
+              </h4>
+           
+           
+           
             </div>
           </div>
-
           <div className="buttonDiv">
-            <button onClick={() => navigate(`/gallery`)} className="showmore1">
-              Back To Gallery
+            <button onClick={() => navigate(`/form`)} className="showmore1">
+              Enquiry for the sketch
             </button>
           </div>
         </div>
-      }
+      </div>
     </div>
   );
-}
+  }  

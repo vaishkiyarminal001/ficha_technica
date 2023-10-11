@@ -2,16 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import TitleIcon from '@mui/icons-material/Title';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import { MyAuthContext } from '../Context/AuthContextProvide';
 import { useContext } from 'react';
-import './Gallery.css';
+import '../Pages/Gallery.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function Gallery() {
+export default function Delete() {
   const [state, setState] = useState([]);
-  const navigate = useNavigate();
+  
   const { lang } = useContext(MyAuthContext);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     DisplayPaint();
@@ -32,35 +35,34 @@ export default function Gallery() {
     }
   };
 
-  if(!lang){
-
-  }
-
-
-
-
-
-
+  const handleDelete = async (id) => {
+    try {
+      const res = await fetch(`http://localhost:8000/gallery/${id}`, {
+        method: 'DELETE',
+      });
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+      // Remove the deleted item from the state
+      setState((prevState) => prevState.filter((item) => item._id !== id));
+      toast("Deleted");
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle the error, e.g., by displaying an error message to the user.
+    }
+  };
 
   return (
-    <div className="conatiner">
-
-      <div className="upperImg">
-      {/* <img src="https://www.kindpng.com/picc/m/652-6523798_gallery-blk-calligraphy-hd-png-download.png" alt="" /> */}
-
-      <h1>🖼️Welcome to my gallery page!🎨</h1>
-
-       <h4>Here you can browse through a collection of my work, including paintings, drawings art. I am constantly creating new pieces, so be sure to check back often.
-        I hope you enjoy my work!</h4>
-      </div>
+    <div className="container">
+     <button  onClick={() => navigate("/admin")} >Back to add products</button>
 
       <div className="display-card">
         {state.map((e) => (
-          <div key={e._id} className="card" onClick={() => navigate(`singleproduct/${e._id}`)}>
+          <div key={e._id} className="card">
             <img
               src={e.image}
               alt={e.title}
-              onClick={() => navigate(`singleproduct/${e._id}`)}
+             
               width="350px"
               height="350px"
             />
@@ -76,26 +78,25 @@ export default function Gallery() {
                   Técnica: {e.Stechnique}
                 </h3>
                 <h3>
-                  <TitleIcon className="icon" />
-                  Título: {e.Stitle}
+                  <ColorLensIcon className="icon" />
+                  Técnica: {e.Scentury}
                 </h3>
-
-               
+                <h4>
+                  <CalendarMonthIcon className="icon" />
+                  {e.Syear}
+                </h4>
+                <h4>
+                  <CalendarMonthIcon className="icon" />
+                  {e.series}
+                </h4>
               </div>
             </div>
-            <button onClick={() => navigate(`singleproduct/${e._id}`)} className="showmore">
-              Show More
+            <button className="showmore" onClick={() => handleDelete(e._id)}>
+              Delete
             </button>
           </div>
         ))}
       </div>
-      {/* <div className="but">
-        <button className="showmore2">Previous</button>
-        <button className="showmore2">1</button>
-        <button className="showmore2">Next</button>
-      </div> */}
     </div>
   );
-
-  
 }

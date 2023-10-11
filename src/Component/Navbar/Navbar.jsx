@@ -43,7 +43,7 @@ import React, { useState,useEffect } from 'react'
         <img src={img} alt=''/>
       </div>
 
-{/* <img className='img' src='https://png.pngtree.com/png-clipart/20230817/original/pngtree-initial-letter-ll-logo-template-design-abstract-icon-simple-vector-picture-image_10936199.png' alt='error'></img> */}
+
 
      <nav>
 

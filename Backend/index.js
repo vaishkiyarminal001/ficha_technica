@@ -37,23 +37,22 @@ app.get("/gallery", async(req, res) =>{
 
 
 // for single product
-app.get("/gallery/:id", async(req, res) =>{
-
-
+app.get("/gallery/:id", async (req, res) => {
     try {
-
-    const displayPaint = await userModel.findOne();
-    res.send(displayPaint);
-        
+      const productId = req.params.id; // Get the 'id' parameter from the URL
+      const product = await userModel.findOne({ _id: productId });
+  
+      if (!product) {
+        // Handle the case where the product with the given ID is not found
+        return res.status(404).json({ message: "Product not found" });
+      }
+  
+      res.json(product);
     } catch (error) {
-        console.log(error);
-        console.log("Error While loading Get Method");
-        
+      console.error(error);
+      res.status(500).json({ message: "Error while loading product" });
     }
-    
-
-
-})
+  });
 
 
 
@@ -79,16 +78,29 @@ app.post("/post", async(req, res) =>{
 })
 
 
+// delete
 
+app.delete("/gallery/:notesId", async (req, res) => {
+    const notesId = req.params.notesId;
 
-// app.delete("/delet", (req, res) =>{
-//     res.send("Welcome to delet");
-// })
+    try {
+        const deletedNote = await userModel.findByIdAndRemove(notesId);
+
+        if (!deletedNote) {
+            return res.status(404).json({ message: "Note not found" });
+        }
+
+        res.json({ message: "Note deleted successfully" });
+    } catch (error) {
+        console.error("Error:", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+});
 
 app.listen(port, async()=>{
 
    try {
-    await connection;
+    await connection();
     console.log("Connected to Mongo");
     
    } catch (error) {

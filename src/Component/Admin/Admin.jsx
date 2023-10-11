@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import "./Admin.css";
+import { useNavigate } from 'react-router-dom';
+import { MyAuthContext } from '../Context/AuthContextProvide';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export const Admin = () => {
 
@@ -25,9 +30,13 @@ export const Admin = () => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [message, setMessage] = useState('');
-  const [login, setLogin] = useState(false);
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const naviagte = useNavigate();
+  const {isAuth, setIsauth} = useContext(MyAuthContext);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,11 +49,13 @@ export const Admin = () => {
     try {
       // Send a POST request to your backend to create a new item
       const response = await axios.post('http://localhost:8000/post', formData);
+      toast("Post Successfully");;
+
 
       if (response.status === 201) {
         setMessage('Item created successfully.');
         setFormData(initialFormData);
-        alert("Post Successfully");
+        
       }
     } catch (error) {
       setMessage('Error creating item. Please try again.');
@@ -56,15 +67,16 @@ export const Admin = () => {
     
     if (username === 'admin' && password === 'admin123') {
      
-      setLogin(true);
+      setIsauth(true);
+      toast("Login Successfull");
     } else {
       
-      setLogin(false);
-      alert("Wrong Id/Password");
+      setIsauth(false);
+      toast("Wrong ID/Password");
     }
   };
 
-  if(!login){
+  if(!isAuth){
     return(
 
         <div className="admin-login-container">
@@ -99,6 +111,12 @@ export const Admin = () => {
 
 
     <div className='mainDiv'>
+
+      <button onClick={() =>{
+        naviagte("/delete")
+      }} style={{background: "red"}}>Delete Product</button>
+
+
     <h2>Create New Item</h2>
     <form className='formClass' onSubmit={handleSubmit}>
       <div>
@@ -166,22 +184,8 @@ export const Admin = () => {
         <input type="text" name="century" value={formData.century} onChange={handleChange} />
       </div>
 
-      <button
-          type="submit"
-          style={{
-            marginLeft: '80%',
-            // Apply media query for smaller screens
-            '@media (max-width: 765px)': {
-              marginLeft: '50%', // Adjust the margin for smaller screens
-            },
-            // Apply media query for medium screens
-            '@media (min-width: 992px) and (max-width: 1024px)': {
-              marginLeft: '50%', // Adjust the margin for medium screens
-            },
-          }}
-        >
-          Submit
-        </button>
+      <button className="submitAdmin"
+          type="submit">Submit</button>
       
     </form>
    

@@ -13,9 +13,6 @@ if(!lang){
      
       <div className="about-content">
 
-      <div>
-      <img src="#" alt="Error" />
-      </div>
         <h1>Sobre nosotros</h1>
 
         
@@ -26,7 +23,7 @@ if(!lang){
 
 
       <p>
-      ¡Hola amigos! Mi nombre es Edger y soy el orgulloso portador de una herencia artística que abarca dos generaciones de dibujantes apasionados. En [Nombre de su sitio web], nos embarcamos en un viaje a través de los delicados trazos del legado artístico de nuestra familia, permitiéndole ingresar a un mundo donde los bocetos cuentan historias, las emociones se entretejen en cada línea y el arte trasciende el tiempo.</p>
+      ¡Hola amigos! Mi nombre es Edger y soy el orgulloso portador de una herencia artística que abarca dos generaciones de dibujantes apasionados. En Atre Galerias Roma, nos embarcamos en un viaje a través de los delicados trazos del legado artístico de nuestra familia, permitiéndole ingresar a un mundo donde los bocetos cuentan historias, las emociones se entretejen en cada línea y el arte trasciende el tiempo.</p>
       
       <h2>Nuestro legado, tu inspiración</h2>
       <p>
@@ -39,12 +36,12 @@ if(!lang){
       <p>Nuestros bocetos son un reflejo de la vibrante cultura mexicana, los impresionantes paisajes y la diversidad de personas que llaman hogar a este país. Desde los coloridos mercados de Oaxaca hasta las serenas playas de Cancún, nuestros bocetos pretenden transportarte al corazón de México, donde el arte es una forma de vida.</p>
       
       <h2>Compartiendo la belleza</h2>
-      <p>En [Nombre de su sitio web], creemos que el arte debe ser compartido y apreciado. Por eso hemos seleccionado una colección de bocetos que capturan la esencia de la belleza de México. Ya sea que esté buscando adornar su hogar con auténtico arte mexicano o buscando un regalo único para un ser querido, nuestros bocetos son un testimonio del espíritu perdurable de la creatividad mexicana.</p>
+      <p>En Atre Galerias Roma, creemos que el arte debe ser compartido y apreciado. Por eso hemos seleccionado una colección de bocetos que capturan la esencia de la belleza de México. Ya sea que esté buscando adornar su hogar con auténtico arte mexicano o buscando un regalo único para un ser querido, nuestros bocetos son un testimonio del espíritu perdurable de la creatividad mexicana.</p>
       
       
       <h2>Únete a nosotros en este viaje artístico</h2>
       <p>Te invitamos a explorar nuestra galería, donde cada boceto es un trabajo de amor, un pedazo de historia y una ventana al alma de México. Mientras navega por nuestra colección, recuerde que no solo está adquiriendo arte; Te estás convirtiendo en parte del legado artístico de nuestra familia.</p>
-      <p>Gracias por visitar [Nombre de su sitio web]. Celebremos juntos la belleza de México, un boceto a la vez.</p>
+      <p>Gracias por visitar Atre Galerias Roma. Celebremos juntos la belleza de México, un boceto a la vez.</p>
 
 
         
@@ -56,9 +53,7 @@ if(!lang){
     <div className="about-container">
      
       <div className="about-content">
-        <div>
-      <img src="#" alt="Error" />
-      </div>
+     
         <h1>About Us</h1>
 
         
@@ -66,7 +61,7 @@ if(!lang){
         Welcome to the World of Timeless Sketches
       </h2>
       <p>
-        Hola, Amigos! My name is Edger, and I am the proud bearer of a artistic heritage that spans two generations of passionate sketch artists. At [Your Website Name], we embark on a journey through the delicate strokes of our family's artistic legacy, allowing you to step into a world where sketches tell stories, emotions are woven into every line, and art transcends time.
+        Hola, Amigos! My name is Edger, and I am the proud bearer of a artistic heritage that spans two generations of passionate sketch artists. At Atre Galerias Roma , we embark on a journey through the delicate strokes of our family's artistic legacy, allowing you to step into a world where sketches tell stories, emotions are woven into every line, and art transcends time.
       </p>
       <h2>Our Legacy, Your Inspiration</h2>
       <p>
@@ -84,14 +79,14 @@ if(!lang){
       </p>
       <h2>Sharing the Beauty</h2>
       <p>
-        At [Your Website Name], we believe that art is meant to be shared and cherished. That's why we have curated a collection of sketches that capture the essence of Mexico's beauty. Whether you're looking to adorn your home with authentic Mexican art or seeking a unique gift for a loved one, our sketches are a testament to the enduring spirit of Mexican creativity.
+        At Atre Galerias Roma, we believe that art is meant to be shared and cherished. That's why we have curated a collection of sketches that capture the essence of Mexico's beauty. Whether you're looking to adorn your home with authentic Mexican art or seeking a unique gift for a loved one, our sketches are a testament to the enduring spirit of Mexican creativity.
       </p>
       <h2>Join Us on This Artistic Journey</h2>
       <p>
         We invite you to explore our gallery, where each sketch is a labor of love, a piece of history, and a window into the soul of Mexico. As you browse through our collection, remember that you're not just acquiring art; you're becoming a part of our family's artistic legacy.
       </p>
       <p>
-        Thank you for visiting [Your Website Name]. Together, let's celebrate the beauty of Mexico, one sketch at a time.
+        Thank you for visiting Atre Galerias Roma. Together, let's celebrate the beauty of Mexico, one sketch at a time.
       </p>
 
 
