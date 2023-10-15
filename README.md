@@ -19,7 +19,8 @@ Welcome to the Art Gallery website, your gateway to the world of artistic master
    - Delete Products
 
 4. [Tech Stack]
-5. [Deployment](#https://652c47a95b675c32749c2169--fichaart.netlify.app/)
+5. [Deployment]
+https://652c47a95b675c32749c2169--fichaart.netlify.app/
 
 ## Introduction
 
@@ -79,6 +80,9 @@ Our website is built on a robust tech stack to ensure performance and reliabilit
 
 The Art Gallery website is deployed using Render.com for its server and Netlify for hosting the front end. This combination ensures a fast and reliable website experience for all users.
 
-Thank you for visiting our Art Gallery website. We hope you enjoy your artistic journey with us! 🎭🖌️
+Thank you for visiting my Art Gallery website. I hope you enjoy your artistic journey with us! 🎭🖌️
+
+Design and Develop by Minal Kumari😊
+Happy Coding ❤️
 
 </div>
