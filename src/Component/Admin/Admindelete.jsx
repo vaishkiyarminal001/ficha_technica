@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Admin.css";
 import { useNavigate } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
@@ -22,7 +23,7 @@ export default function Delete() {
 
   const DisplayPaint = async () => {
     try {
-      const res = await fetch('http://localhost:8000/gallery');
+      const res = await fetch('https://ficha.onrender.com/gallery');
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
       }
@@ -37,7 +38,7 @@ export default function Delete() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:8000/gallery/${id}`, {
+      const res = await fetch(`https://ficha.onrender.com/gallery/${id}`, {
         method: 'DELETE',
       });
       if (!res.ok) {
@@ -54,7 +55,7 @@ export default function Delete() {
 
   return (
     <div className="container">
-     <button  onClick={() => navigate("/admin")} >Back to add products</button>
+     <button className="DeleteBt" onClick={() => navigate("/admin")} >Back to add products</button>
 
       <div className="display-card">
         {state.map((e) => (

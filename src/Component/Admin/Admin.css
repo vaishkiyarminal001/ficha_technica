@@ -124,6 +124,10 @@
     color: #007bff;
   }
 
+  .DeleteBt{
+    margin-top: 2%;
+  }
+
 
 
   
@@ -141,12 +145,20 @@
   input[type="text"] {
     width: 100%;
   }
+
+  .DeleteBt{
+    margin-top: 5%;
+  }
 }
 
 /* Media Query for Medium Screens */
 @media (max-width: 992px) {
   .mainDiv {
     width: 95%;
+  }
+
+  .DeleteBt{
+    margin-top: 5%;
   }
 }
   

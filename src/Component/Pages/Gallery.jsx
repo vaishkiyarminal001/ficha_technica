@@ -19,7 +19,7 @@ export default function Gallery() {
 
   const DisplayPaint = async () => {
     try {
-      const res = await fetch('http://localhost:8000/gallery');
+      const res = await fetch('https://ficha.onrender.com/gallery');
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
       }
@@ -89,11 +89,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-      {/* <div className="but">
-        <button className="showmore2">Previous</button>
-        <button className="showmore2">1</button>
-        <button className="showmore2">Next</button>
-      </div> */}
+      
     </div>
   );
 

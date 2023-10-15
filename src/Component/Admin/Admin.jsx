@@ -28,6 +28,9 @@ export const Admin = () => {
     century: '',
   };
 
+
+
+
   const [formData, setFormData] = useState(initialFormData);
   const [message, setMessage] = useState('');
   
@@ -37,6 +40,9 @@ export const Admin = () => {
   const naviagte = useNavigate();
   const {isAuth, setIsauth} = useContext(MyAuthContext);
 
+
+
+ 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,8 +54,27 @@ export const Admin = () => {
 
     try {
       // Send a POST request to your backend to create a new item
-      const response = await axios.post('http://localhost:8000/post', formData);
-      toast("Post Successfully");;
+      const response = await axios.post('https://ficha.onrender.com/post', formData);
+      toast("Post Successfully");
+
+      setFormData({
+      image: '',
+      image2: '',
+      image3: '',
+      name: '',
+      series: '',
+      size: '',
+      Splacedob: '',
+      Stitle: '',
+      Stechnique: '',
+      Syear: '',
+      Scentury: '',
+      title: '',
+      placedob: '',
+      technique: '',
+      year: '',
+      century: '',
+    });
 
 
       if (response.status === 201) {
@@ -62,10 +87,10 @@ export const Admin = () => {
     }
   };
 
-
+console.log(process.env.id);
   const handleLogin = () => {
     
-    if (username === 'admin' && password === 'admin123') {
+    if (username === "edger" && password === "edger123@") {
      
       setIsauth(true);
       toast("Login Successfull");
@@ -75,6 +100,10 @@ export const Admin = () => {
       toast("Wrong ID/Password");
     }
   };
+
+
+
+
 
   if(!isAuth){
     return(
@@ -193,5 +222,3 @@ export const Admin = () => {
    
   );
 };
-
-
