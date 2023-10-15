@@ -8,17 +8,18 @@ Welcome to the Art Gallery website, your gateway to the world of artistic master
 
 1. [Introduction]
 2. [Customer Experience]
-   - [Home]
-   - [Gallery](#gallery)
-   - [Enquiry](#enquiries)
-   - [Contact](#contact)
+   - [Home](#https://652c47a95b675c32749c2169--fichaart.netlify.app/)
+   - [Gallery](#https://652c47a95b675c32749c2169--fichaart.netlify.app/gallery)
+   - [Enquiry](#https://652c47a95b675c32749c2169--fichaart.netlify.app/form)
+   - [Contact](#https://652c47a95b675c32749c2169--fichaart.netlify.app/contact)
 
 3. [Admin Features]
-   - [Admin Login]
-   - [Add Products]
-   - [Delete Products]
+   - Admin Login
+   - Add Products
+   - Delete Products
+
 4. [Tech Stack]
-5. [Deployment]
+5. [Deployment](#https://652c47a95b675c32749c2169--fichaart.netlify.app/)
 
 ## Introduction
 
