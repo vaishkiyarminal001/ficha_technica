@@ -60,7 +60,7 @@ import React, { useState,useEffect } from 'react'
 
      
      <div className="upper-nav">
-      <button onClick={() => setLang(!lang)} className="nav-button">{lang ? "Española"  : "English"}</button>
+      <button onClick={() => setLang(!lang)} className="nav-button">{lang ? "Español"  : "English"}</button>
     </div>
   
        </div> 
