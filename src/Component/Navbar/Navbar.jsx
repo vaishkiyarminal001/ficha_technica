@@ -41,7 +41,8 @@ import React, { useState,useEffect } from 'react'
    return ( 
      <div className="Navbar"> 
 
-<div className='logo'>
+<div className='logo' style={{cursor: "pointer" }} onClick={() =>{navigate("/")}}>
+
         <img src={img} alt=''/>
       </div>
 

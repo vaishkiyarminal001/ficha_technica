@@ -6,6 +6,13 @@ import  img2 from"./2.png"
 import  img3 from"./3.png"
 import  img9 from"./9.png"
 import  img7 from"./7.png"
+import img1 from "./img1.jpeg";
+import imgnew2 from "./img2.jpeg";
+import imgnew3 from "./img3.png";
+import img4 from "./img4.png";
+import { useNavigate } from 'react-router-dom';
+
+
 import { MyAuthContext } from '../Context/AuthContextProvide';
 import { useContext } from 'react';
 
@@ -20,6 +27,7 @@ export default function Home() {
   const [forward, setForward] = useState(true);
   const {lang} = useContext(MyAuthContext);
 
+  const navigate = useNavigate();
   
   function shiftImage(count) {
     switch (count){
@@ -143,10 +151,7 @@ export default function Home() {
   
   
   
-        {/* what we have done */}
-        <div className="doneText">
-          <p>lo que hemos hecho</p>
-        </div>
+     
   
   
   
@@ -159,15 +164,15 @@ export default function Home() {
   
         <div className="TrendingArt">
          
-          <img src={img8} alt='error'/>
-          <img src={img2} alt='error'/>
-          <img src={img3} alt='error'/>
-          <img src={img9} alt='error'/>
-          {/* <img src={img7} alt='error'/> */}
+          <img src={img1} alt='error'/>
+          <img src={imgnew2} alt='error'/>
+          <img src={imgnew3} alt='error'/>
+          <img src={img4} alt='error'/>
+          
   
         </div>
   
-        <button className='ExploreButton'>Explorar</button>
+        <button onClick={() => navigate("/gallery")} className='ExploreButton'>Explorar</button>
   
   
   
@@ -287,14 +292,6 @@ export default function Home() {
 
 
 
-
-      {/* what we have done */}
-      <div className="doneText">
-        <p>What we've done</p>
-      </div>
-
-
-
       {/* Trending Art Work */}
 
       <div className="TrendingArtText">
@@ -304,15 +301,15 @@ export default function Home() {
 
       <div className="TrendingArt">
        
-        <img src={img8} alt='error'/>
-        <img src={img2} alt='error'/>
-        <img src={img3} alt='error'/>
-        <img src={img9} alt='error'/>
+          <img src={img1} alt='error'/>
+          <img src={imgnew2} alt='error'/>
+          <img src={imgnew3} alt='error'/>
+          <img src={img4} alt='error'/>
         {/* <img src={img7} alt='error'/> */}
 
       </div>
 
-      <button className='ExploreButton'>Explore</button>
+      <button onClick={() => navigate("/gallery")} className='ExploreButton'>Explore</button>
 
 
 
