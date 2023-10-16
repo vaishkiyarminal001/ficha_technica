@@ -5,7 +5,7 @@ export const MyAuthContext = createContext(); //box
 
 function AuthContextProvide({children}) {
  
-const[lang, setLang]= useState(false);
+const[lang, setLang]= useState(true);
 // console.log(lang)
 
 const[isAuth, setIsauth] = useState(false);
