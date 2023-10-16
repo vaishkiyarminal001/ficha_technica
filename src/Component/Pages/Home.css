@@ -196,9 +196,7 @@
 
 .heading span{
   /* border: 1px solid red; */
-  font-size: 20px;
-  color: #b79b54;
-  margin: auto;
+  display: none;
 
 }
 
