@@ -392,7 +392,7 @@ text-align: center;
 
 .heading span{
   /* border: 1px solid red; */
-  font-size: 45px;
+  font-size: 40px;
   color: #b79b54;
   margin: auto;
 
@@ -516,7 +516,7 @@ object-fit: cover;
 }
 
 .DiscoverBtn{
-  width: 35%;
+  width: 38%;
   margin-top: 3%;
   padding: 10px;
   font-size: 1.4em;
@@ -528,7 +528,7 @@ object-fit: cover;
 
 
 .desc{
-font-size: 3em;
+font-size: 30px;
 }
 
 .DesignNew{
