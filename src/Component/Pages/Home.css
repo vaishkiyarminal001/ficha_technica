@@ -84,7 +84,7 @@
 
 .TrendingArt img {
     width:100%;
-    height: 400px;
+    /* height: 400px; */
     margin: auto;
 }
 
@@ -169,6 +169,12 @@
  align-items: center;
 }
 
+.TrendingArtText{
+  /* border: 1px solid red; */
+  font-size: 40px;
+  
+}
+
 .DesignNew div h3{
   text-align: center;
 }
@@ -217,6 +223,15 @@ padding: 2%;
 /* border: 1px solid red; */
 }
 
+.TrendingArt{
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
 
 .images-container > .image{
 width: 10%;
@@ -260,7 +275,7 @@ object-fit: cover;
 
 .TrendingArt img {
   width:100%;
-  height: 400px;
+  /* height: 400px; */
   margin: auto;
 }
 
@@ -349,6 +364,12 @@ align-items: center;
 text-align: center;
 }
 
+.TrendingArtText{
+  /* border: 1px solid red; */
+  font-size: 30px;
+  
+}
+
 
 }
 
@@ -361,7 +382,7 @@ text-align: center;
 .heading{
   width: 90%;
   margin: auto;
-  font-size: 2em;
+  font-size:20px;
   /* border: 1px solid red; */
   font-family: 'Poppins', sans-serif;
   text-align: left;
@@ -371,7 +392,7 @@ text-align: center;
 
 .heading span{
   /* border: 1px solid red; */
-  font-size: 55px;
+  font-size: 45px;
   color: #b79b54;
   margin: auto;
 
@@ -396,6 +417,12 @@ display: flex;
 flex-direction: row;
 padding: 2%;
 /* border: 1px solid red; */
+}
+
+.TrendingArtText{
+  /* border: 1px solid red; */
+  font-size: 20px;
+  
 }
 
 
@@ -441,18 +468,20 @@ object-fit: cover;
 
 .TrendingArt img {
   width:100%;
-  height: 400px;
+  /* height: 400px; */
   margin: auto;
+  /* border: 1px solid red; */
 }
 
 .ExploreButton{
-  width: 15%;
+  width: 35%;
   margin-top: 3%;
   padding: 10px;
-  font-size: 1.4em;
+  font-size:  20px;
   background-color: #b79b54;
   border: none;
   color: white;
+  /* border: 1px solid red; */
 
 }
 
@@ -487,7 +516,7 @@ object-fit: cover;
 }
 
 .DiscoverBtn{
-  width: 15%;
+  width: 35%;
   margin-top: 3%;
   padding: 10px;
   font-size: 1.4em;

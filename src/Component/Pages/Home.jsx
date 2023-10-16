@@ -293,7 +293,7 @@ export default function Home() {
 
       {/* Trending Art Work */}
 
-      <div style={{ fontSize: '2em' }}>
+      <div className="TrendingArtText">
       <h1>Browse trending artworks</h1>
       </div>
 

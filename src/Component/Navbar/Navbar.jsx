@@ -13,6 +13,8 @@ import React, { useState,useEffect } from 'react'
   const {language,lang ,setLang} = useContext(MyAuthContext);
   console.log(lang);
 
+  const navigate = useNavigate();
+
 
    let mylink=[ 
      { 
