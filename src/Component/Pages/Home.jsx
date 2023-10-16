@@ -101,7 +101,9 @@ export default function Home() {
       <div>
         {/* heading */}
         <div className="heading">
-        <h1><span>Transformation</span><br/> Espacios con Arte</h1>
+        <h1>
+          {/* <span>Transformation</span> */}
+          <br/> Espacios con Arte</h1>
         </div>
   
   
@@ -244,7 +246,9 @@ export default function Home() {
     <div>
       {/* heading */}
       <div className="heading">
-      <h1><span>Transforming</span><br/> Spaces with Art</h1>
+      <h1>
+        {/* <span>Transforming</span> */}
+        <br/> Spaces with Art</h1>
       </div>
 
 
