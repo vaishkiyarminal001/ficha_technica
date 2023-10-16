@@ -79,7 +79,7 @@ export const Contactform = () => {
 
     return (
       <div className="FormContainer">
-        <h1>Enquiry Form</h1>
+        <h1>Formulario de Consulta</h1>
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Nombre:</label>

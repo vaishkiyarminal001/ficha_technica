@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
-import { MyAuthContext } from '../Context/AuthContextProvide';
 import { useContext } from 'react';
 import '../Pages/Gallery.css';
 import { toast } from 'react-toastify';
@@ -13,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Delete() {
   const [state, setState] = useState([]);
   
-  const { lang } = useContext(MyAuthContext);
+ 
 
   const navigate = useNavigate();
 
@@ -80,20 +79,20 @@ export default function Delete() {
                 </h3>
                 <h3>
                   <ColorLensIcon className="icon" />
-                  Técnica: {e.Scentury}
+                  Singlo: {e.Scentury}
                 </h3>
                 <h4>
                   <CalendarMonthIcon className="icon" />
-                  {e.Syear}
+                  Año: {e.Syear}
                 </h4>
                 <h4>
                   <CalendarMonthIcon className="icon" />
-                  {e.series}
+                  Serie: {e.series}
                 </h4>
               </div>
             </div>
             <button className="showmore" onClick={() => handleDelete(e._id)}>
-              Delete
+              Delete/Borrar
             </button>
           </div>
         ))}

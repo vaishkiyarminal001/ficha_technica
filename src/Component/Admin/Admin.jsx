@@ -173,23 +173,23 @@ console.log(process.env.id);
         <input type="text" name="size" value={formData.size} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Splacedob">Splacedob:</label>
+        <label htmlFor="Splacedob">Spanish Place DOB:</label>
         <input type="text" name="Splacedob" value={formData.Splacedob} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Stitle">Stitle:</label>
+        <label htmlFor="Stitle">Spanish Title:</label>
         <input type="text" name="Stitle" value={formData.Stitle} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Stechnique">Stechnique:</label>
+        <label htmlFor="Stechnique">Spanish Technique:</label>
         <input type="text" name="Stechnique" value={formData.Stechnique} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Syear">Syear:</label>
+        <label htmlFor="Syear">Spanish Year:</label>
         <input type="text" name="Syear" value={formData.Syear} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Scentury">Scentury:</label>
+        <label htmlFor="Scentury">Spanish Century:</label>
         <input type="text" name="Scentury" value={formData.Scentury} onChange={handleChange} />
       </div>
       <div>
@@ -197,7 +197,7 @@ console.log(process.env.id);
         <input type="text" name="title" value={formData.title} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="placedob">Placedob:</label>
+        <label htmlFor="placedob">Place DOB:</label>
         <input type="text" name="placedob" value={formData.placedob} onChange={handleChange} />
       </div>
       <div>

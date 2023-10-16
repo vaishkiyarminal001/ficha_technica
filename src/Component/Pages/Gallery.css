@@ -341,6 +341,16 @@ button[type="submit"]:hover {
     padding: 20px; 
 
   }
+
+  .loader{
+    /* border: 1px solid red; */
+    margin-top: 8%;
+    padding-top:2% ;
+  }
+
+  .loader img{
+    width: 100%;
+  }
   
 
 
@@ -440,6 +450,16 @@ button[type="submit"]:hover {
   .buttonDiv{
     width: 100%;
   }
+
+  .loader{
+    /* border: 1px solid red; */
+    margin-top: 5%;
+  }
+
+  .loader img{
+    width: 100%;
+  }
+
   
 
   
