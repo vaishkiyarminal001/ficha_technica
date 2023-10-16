@@ -84,7 +84,7 @@
 
 .TrendingArt img {
     width:100%;
-    /* height: 400px; */
+    height: 400px;
     margin: auto;
 }
 
@@ -186,7 +186,7 @@
 .heading{
   width: 90%;
   margin: auto;
-  font-size: 2em;
+  font-size: 1em;
   /* border: 1px solid red; */
   font-family: 'Poppins', sans-serif;
   text-align: left;
@@ -273,7 +273,7 @@ object-fit: cover;
 
 .TrendingArt img {
   width:100%;
-  /* height: 400px; */
+  height: 400px;
   margin: auto;
 }
 
@@ -380,7 +380,7 @@ text-align: center;
 .heading{
   width: 90%;
   margin: auto;
-  font-size:15px;
+  font-size: 1rem;
   /* border: 1px solid red; */
   font-family: 'Poppins', sans-serif;
   text-align: left;
@@ -390,7 +390,7 @@ text-align: center;
 
 .heading span{
   /* border: 1px solid red; */
-  display: none;
+ display: none;
 
 }
 
@@ -464,20 +464,19 @@ object-fit: cover;
 
 .TrendingArt img {
   width:100%;
-  /* height: 400px; */
+  height: 400px;
   margin: auto;
-  /* border: 1px solid red; */
 }
 
 .ExploreButton{
   width: 35%;
   margin-top: 3%;
   padding: 10px;
-  font-size:  20px;
+  font-size: 1.4em;
   background-color: #b79b54;
   border: none;
   color: white;
-  /* border: 1px solid red; */
+
 
 }
 
@@ -512,7 +511,7 @@ object-fit: cover;
 }
 
 .DiscoverBtn{
-  width: 38%;
+  width: 40%;
   margin-top: 3%;
   padding: 10px;
   font-size: 1.4em;
@@ -524,7 +523,7 @@ object-fit: cover;
 
 
 .desc{
-font-size: 30px;
+font-size: 3em;
 }
 
 .DesignNew{

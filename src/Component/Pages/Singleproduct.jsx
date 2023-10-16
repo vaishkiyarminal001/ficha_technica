@@ -39,7 +39,7 @@ export default function Singleproduct() {
     <div className="display-card1">
      
       <div className="left">
-        <img src={state.image} alt="error" width="450px" height="450px" />
+        <img src={state.image} alt="error"  />
       </div>
 
       <div className="right">

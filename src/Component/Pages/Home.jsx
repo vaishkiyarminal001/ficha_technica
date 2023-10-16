@@ -102,7 +102,7 @@ export default function Home() {
         {/* heading */}
         <div className="heading">
         <h1>
-          {/* <span>Transformation</span> */}
+          <span>Transformation</span>
           <br/> Espacios con Arte</h1>
         </div>
   
@@ -152,7 +152,7 @@ export default function Home() {
   
         {/* Trending Art Work */}
   
-        <div style={{ fontSize: '2em' }}>
+        <div className="TrendingArtText">
         <h1>Explorar obras de arte de moda</h1>
         </div>
   
@@ -247,7 +247,7 @@ export default function Home() {
       {/* heading */}
       <div className="heading">
       <h1>
-        {/* <span>Transforming</span> */}
+        <span>Transforming</span>
         <br/> Spaces with Art</h1>
       </div>
 
