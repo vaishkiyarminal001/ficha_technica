@@ -110,7 +110,7 @@ export default function Home() {
         {/* heading */}
         <div className="heading">
         <h1>
-          <span>Transformation</span>
+          <span>Transformando</span>
           <br/> Espacios con Arte</h1>
         </div>
   
