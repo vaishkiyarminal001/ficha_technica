@@ -454,6 +454,7 @@ button[type="submit"]:hover {
   .loader{
     /* border: 1px solid red; */
     margin-top: 5%;
+    padding-bottom: 12%;
   }
 
   .loader img{
