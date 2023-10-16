@@ -20,7 +20,7 @@ Welcome to the Art Gallery website, your gateway to the world of artistic master
 
 4. [Tech Stack]
 5. [Deployment]
-https://fichaart.netlify.app/
+https://ficha-technica.vercel.app
 
 ## Introduction
 
