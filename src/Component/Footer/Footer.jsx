@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import "./Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -10,7 +10,7 @@ import { MyAuthContext } from '../Context/AuthContextProvide';
 export const Footer = () => {
 
     const navigate = useNavigate();
-    const {lang} = useState(MyAuthContext);
+    const {lang} = useContext(MyAuthContext);
 
 
     if(!lang){

@@ -265,36 +265,41 @@ export default function Home() {
       {/* video */}
 
       <React.Fragment>
-
-        <div className="carousel-container">
-          <div className="images-container">
-           
-            <div className="image" style={{marginLeft: margin}}>
-              <img src={img7} alt="img7" />
-              </div>
-
-              <div className="image">
-              <img src={img2} alt="img2" />
-              </div>
-
-              <div className="image">
-              <img src={img3} alt="img3" />
-              </div>
-
-              <div className="image">
-              <img src={img8} alt="img8" />
-              </div>
-
-              <div className="image">
-              <img src={img9} alt="img9" />
-              </div>
+  
+          <div className="carousel-container">
+            <div className="images-container">
+             
+              <div className="image" style={{marginLeft: margin}}>
+                {/* <img src={img7} alt="img7" /> */}
+                <img src="https://images.saatchiart.com/saatchi/840757/art/2962617/2032510-HSC00001-7.jpg" alt="img7" />
+                </div>
+  
+                <div className="image">
+                {/* <img src={img2} alt="img2" /> */}
+                <img src="https://www.jiomart.com/images/product/original/rvwpkd53vy/hanish-arts-crafts-scenery-canvas-painting-handmade-painting-18-x-24-unframed-product-images-orvwpkd53vy-p590815153-0-202110082026.jpg?im=Resize=(1000,1000)" alt="img7" />
+                </div>
+  
+                <div className="image">
+                {/* <img src={img3} alt="img3" /> */}
+                <img src="https://writingsonthewall.in/cdn/shop/products/Woman-in-Black-Oil-Painting-Oil-Painting-Writings-On-The-Wall-911.jpg?v=1675102673&width=1445" alt="img7" />
+                </div>
+  
+                <div className="image">
+                {/* <img src={img8} alt="img8" /> */}
+                <img src="https://artist.com/photos/arts/big/colour-full-lion-72581454.jpg" alt="img7" />
+                </div>
+  
+                <div className="image">
+                {/* <img src={img9} alt="img9" /> */}
+                <img src="https://images.saatchiart.com/saatchi/840757/art/2962043/2031936-HSC00001-7.jpg" alt="img7" />
+                </div>
+              
+            </div>
+  
             
-          </div>
-
-          
-          </div> 
-      </React.Fragment>
-
+            </div> 
+        </React.Fragment>
+  
 
 
       {/* Trending Art Work */}
