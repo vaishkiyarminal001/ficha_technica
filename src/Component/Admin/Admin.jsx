@@ -67,7 +67,7 @@ console.log(formData)
 
   const handleLogin = () => {
     
-    if (username === 'edger' && password === 'edger123') {
+    if (username === process.env.REACT_APP_USERNAME && password === process.env.REACT_APP_PASSWORD) {
      
       setLogin(true);
       setIsauth(true);
