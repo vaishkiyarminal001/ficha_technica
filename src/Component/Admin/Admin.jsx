@@ -67,7 +67,7 @@ console.log(formData)
 
   const handleLogin = () => {
     
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'edger' && password === 'edger123') {
      
       setLogin(true);
       setIsauth(true);
