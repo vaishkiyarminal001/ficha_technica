@@ -15,7 +15,7 @@ import { MyAuthContext } from '../Context/AuthContextProvide';
 export default function Singleproduct() {
   const [state, setState] = useState({});
   const { id } = useParams();
-  console.log(id);
+  console.log(state.image);
 
   const navigate = useNavigate();
 
@@ -46,7 +46,7 @@ if(!lang){
     <div className="display-card1">
      
       <div className="left">
-        <img src={state.image} alt="error"  />
+        <img src={`https://ficha.onrender.com/${state.image}` } alt="error"  />
       </div>
 
       <div className="right">
@@ -110,7 +110,7 @@ if(!lang){
     <div className="display-card1">
      
       <div className="left">
-        <img src={state.image} alt="error"  />
+        <img  src={`https://ficha.onrender.com/${state.image}` } alt="error"  />
       </div>
 
       <div className="right">

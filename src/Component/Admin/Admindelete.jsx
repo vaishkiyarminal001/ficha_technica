@@ -60,7 +60,7 @@ export default function Delete() {
         {state.map((e) => (
           <div key={e._id} className="card">
             <img
-              src={e.image}
+              src={`https://ficha.onrender.com/${e.image}`}
               alt={e.title}
              
               width="350px"

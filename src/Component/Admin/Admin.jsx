@@ -1,18 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import "./Admin.css";
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from "react-router-dom";
+import { useContext } from 'react';
 import { MyAuthContext } from '../Context/AuthContextProvide';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 
 export const Admin = () => {
 
   const initialFormData = {
     image: '',
-    image2: '',
-    image3: '',
+    
     name: '',
     series: '',
     size: '',
@@ -28,84 +25,60 @@ export const Admin = () => {
     century: '',
   };
 
-
-
-
   const [formData, setFormData] = useState(initialFormData);
   const [message, setMessage] = useState('');
-  
+  const [login, setLogin] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
-  const naviagte = useNavigate();
+  const navigate = useNavigate();
   const {isAuth, setIsauth} = useContext(MyAuthContext);
-
-
-
- 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+  const handleFileChange = (e) => {
+    
+    const file = e.target.files[0];
+    setFormData({ ...formData, image: file });
+  };
+  
+console.log(formData)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       // Send a POST request to your backend to create a new item
-      const response = await axios.post('https://ficha.onrender.com/post', formData);
-      toast("Post Successfully");
-
-      setFormData({
-      image: '',
-      image2: '',
-      image3: '',
-      name: '',
-      series: '',
-      size: '',
-      Splacedob: '',
-      Stitle: '',
-      Stechnique: '',
-      Syear: '',
-      Scentury: '',
-      title: '',
-      placedob: '',
-      technique: '',
-      year: '',
-      century: '',
-    });
-
+      const response = await axios.post('https://ficha.onrender.com/post', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+      
 
       if (response.status === 201) {
         setMessage('Item created successfully.');
         setFormData(initialFormData);
         
       }
+      alert("Post Successfully");
     } catch (error) {
       setMessage('Error creating item. Please try again.');
     }
   };
 
-console.log(process.env.id);
+
   const handleLogin = () => {
     
-    if (username === "edger" && password === "edger123@") {
+    if (username === 'admin' && password === 'admin123') {
      
+      setLogin(true);
       setIsauth(true);
-      toast("Login Successfull");
     } else {
       
-      setIsauth(false);
-      toast("Wrong ID/Password");
+      setLogin(false);
+      alert("Wrong Id/Password");
     }
   };
 
-
-
-
-
-  if(!isAuth){
+  if(!login){
     return(
 
         <div className="admin-login-container">
@@ -140,26 +113,15 @@ console.log(process.env.id);
 
 
     <div className='mainDiv'>
-
-      <button onClick={() =>{
-        naviagte("/delete")
-      }} style={{background: "red"}}>Delete Product</button>
-
-
+      <button  onClick={() => navigate("/delete")} >Go to delete product</button>
     <h2>Create New Item</h2>
-    <form className='formClass' onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="image">Image URL:</label>
-        <input type="text" name="image" value={formData.image} onChange={handleChange} />
-      </div>
-      <div>
-        <label htmlFor="image2">Image2 URL:</label>
-        <input type="text" name="image2" value={formData.image2} onChange={handleChange} />
-      </div>
-      <div>
-        <label htmlFor="image3">Image3 URL:</label>
-        <input type="text" name="image3" value={formData.image3} onChange={handleChange} />
-      </div>
+    <form className='formClass'  encType="multipart/form-data" onSubmit={handleSubmit}>
+    <div>
+          <label htmlFor="image">Image:</label>
+          <input type="file" name="image" accept="image/*"  onChange={handleFileChange} />
+        </div>
+      
+    
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} />
@@ -173,7 +135,7 @@ console.log(process.env.id);
         <input type="text" name="size" value={formData.size} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="Splacedob">Spanish Place DOB:</label>
+        <label htmlFor="Splacedob">Spanish Place and DOB:</label>
         <input type="text" name="Splacedob" value={formData.Splacedob} onChange={handleChange} />
       </div>
       <div>
@@ -197,7 +159,7 @@ console.log(process.env.id);
         <input type="text" name="title" value={formData.title} onChange={handleChange} />
       </div>
       <div>
-        <label htmlFor="placedob">Place DOB:</label>
+        <label htmlFor="placedob">Place and DOB:</label>
         <input type="text" name="placedob" value={formData.placedob} onChange={handleChange} />
       </div>
       <div>
@@ -213,8 +175,22 @@ console.log(process.env.id);
         <input type="text" name="century" value={formData.century} onChange={handleChange} />
       </div>
 
-      <button className="submitAdmin"
-          type="submit">Submit</button>
+      <button
+          type="submit"
+          style={{
+            marginLeft: '80%',
+            // Apply media query for smaller screens
+            '@media (max-width: 765px)': {
+              marginLeft: '50%', // Adjust the margin for smaller screens
+            },
+            // Apply media query for medium screens
+            '@media (min-width: 992px) and (max-width: 1024px)': {
+              marginLeft: '50%', // Adjust the margin for medium screens
+            },
+          }}
+        >
+          Submit
+        </button>
       
     </form>
    
