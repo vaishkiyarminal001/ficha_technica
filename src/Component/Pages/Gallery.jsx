@@ -131,7 +131,7 @@ export default function Gallery() {
         {state.map((e) => (
           <div key={e._id} className="card" onClick={() => navigate(`singleproduct/${e._id}`)}>
             <img
-              src={e.image}
+              src={`https://ficha.onrender.com/${e.image}` }
               alt={e.title}
               onClick={() => navigate(`singleproduct/${e._id}`)}
               width="350px"
