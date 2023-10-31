@@ -34,6 +34,11 @@ export const Footer = () => {
                 <div><InstagramIcon/></div>
                 <div><AddLocationAltIcon/></div>
             </div>
+
+            <div className="CreatedBy">
+          <h3>Creado por :- KalyanTech</h3>
+          
+        </div>
     
     
     
@@ -64,6 +69,10 @@ export const Footer = () => {
             <div><AddLocationAltIcon/></div>
             
 
+        </div>
+
+        <div className="CreatedBy">
+          <h3>Created By :- KalyanTech</h3>
         </div>
 
 
