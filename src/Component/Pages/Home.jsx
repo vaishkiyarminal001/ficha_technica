@@ -134,7 +134,7 @@ export default function Home() {
   
                 <div className="image">
                 {/* <img src={img3} alt="img3" /> */}
-                <img src="https://writingsonthewall.in/cdn/shop/products/Woman-in-Black-Oil-Painting-Oil-Painting-Writings-On-The-Wall-911.jpg?v=1675102673&width=1445" alt="img7" />
+                <img src="https://i.pinimg.com/1200x/ae/2f/a3/ae2fa31eddffd97735ff9e889d0e7e98.jpg" alt="img7" />
                 </div>
   
                 <div className="image">
