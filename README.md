@@ -74,7 +74,7 @@ Our website is built on a robust tech stack to ensure performance and reliabilit
 - Postman: A tool for testing and documenting APIs.
 - MongoDB Atlas: A cloud-based database service.
 - Render.com: A cloud platform for deploying web applications.
-- Netlify: A hosting service for modern web projects.
+- Versel: A hosting service for modern web projects.
 
 ## Deployment
 
