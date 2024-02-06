@@ -35,10 +35,10 @@ export const Footer = () => {
                 <div><AddLocationAltIcon/></div>
             </div>
 
-            <div className="CreatedBy">
+            {/* <div className="CreatedBy">
           <h3>Creado por :- KalyanTech</h3>
           
-        </div>
+        </div> */}
     
     
     
@@ -71,9 +71,9 @@ export const Footer = () => {
 
         </div>
 
-        <div className="CreatedBy">
+        {/* <div className="CreatedBy">
           <h3>Created By :- KalyanTech</h3>
-        </div>
+        </div> */}
 
 
         
